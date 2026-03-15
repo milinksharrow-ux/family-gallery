@@ -1,5 +1,0 @@
-<script>start("/Users/msharrow/family-gallery/data/");</script>
-<script>onHasParentDirectory();</script>
-<script>addRow("thumbs","thumbs",1,384,"384 B",1773419884,"3/13/26, 4:38:04 PM");</script>
-<script>addRow("uploads","uploads",1,384,"384 B",1773419884,"3/13/26, 4:38:04 PM");</script>
-<script>addRow("photos.json","photos.json",0,3519,"3.4 kB",1773419878,"3/13/26, 4:37:58 PM");</script>
