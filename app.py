@@ -26,13 +26,13 @@ UPLOADS_DIR = DATA_DIR / "uploads"
 THUMBS_DIR = DATA_DIR / "thumbs"
 META_PATH = DATA_DIR / "photos.json"
 
-
-def ensure_dirs() -> None:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
-    THUMBS_DIR.mkdir(parents=True, exist_ok=True)
-    if not META_PATH.exists():
-        META_PATH.write_text(json.dumps({"photos": []}, indent=2), encoding="utf-8")
+def ensure_dirs():
+    for path in [DATA_DIR]:
+        if path.exists():
+            if not path.is_dir():
+                raise RuntimeError(f"{path} exists but is not a directory")
+        else:
+            path.mkdir(parents=True)
 
 
 def read_meta() -> dict:
