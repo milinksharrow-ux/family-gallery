@@ -1,0 +1,4 @@
+<script>start("/Users/msharrow/family-gallery/public/");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("app.js","app.js",0,4138,"4.0 kB",1773425336,"3/13/26, 6:08:56 PM");</script>
+<script>addRow("styles.css","styles.css",0,13552,"13.2 kB",1773425381,"3/13/26, 6:09:41 PM");</script>
