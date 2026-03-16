@@ -68,7 +68,7 @@ def slug_safe_filename(original: str) -> str:
 
 ensure_dirs()
 
-app = Flask(__name__, static_folder="public", static_url_path="/static")
+app = Flask(__name__, static_folder="public", static_url_path="")
 
 app.secret_key = os.environ.get("SESSION_SECRET") or secrets.token_hex(32)
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "change-me")
